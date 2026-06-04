@@ -1,0 +1,23 @@
+# Ignore git source control data
+.git
+.gitignore
+
+
+# Ignore environment variables / secrets
+.env
+*.local
+
+# Ignore Docker configuration files themselves
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Ignore OS-specific clutter (like Mac metadata)
+.DS_Store
+Thumbs.db
+
+# Future-proofing: Ignore heavy dependency folders if you add them later
+node_modules/
+venv/
+.venv/
+__pycache__/

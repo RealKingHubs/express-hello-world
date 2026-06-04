@@ -48,6 +48,7 @@ Follow these quick commands to spin up the environment natively:
    ```
 
 3. **Access the application**:
+   const PORT = 3000;
    Open browser to: `http://localhost:3000`
 
 ## 🐳 Docker Containerization
@@ -76,5 +77,5 @@ This project is deployed using **AWS ECS (Elastic Container Service)**.
 
 ### Accessing the Live App
 To view your running live website, access the endpoint provided by your AWS infrastructure setup:
-* **Direct Task IP**: Open the **AWS ECS Console** -> Go to your **Cluster** -> Click **Tasks** -> Select your running Task -> Copy the **Public IP** under the Network section (e.g., `http://<TASK_PUBLIC_IP>:3000`).
+* **Direct Task IP**: Open the **AWS ECS Console** -> Go to your **Cluster** -> Click **Tasks** -> Select your running Task -> Copy the **Public IP** under the Network section (e.g., `http://<TASK_PUBLIC_IP>`).
 * **Load Balancer DNS (Production Standard)**: If your ECS service is wired to an Application Load Balancer (ALB), access the app using the ALB's canonical DNS address.

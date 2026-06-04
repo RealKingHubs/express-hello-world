@@ -2,8 +2,8 @@ const express = require('express');
 const path = require('path'); // 1. Import the built-in path tool
 const app = express();
 
-// Looks for cloud environment port first. If none, defaults to port 3000.
-const PORT = process.env.PORT || 3000; 
+// Looks for cloud environment port first. If none, defaults to port 80.
+const PORT = process.env.PORT || 80; 
 
 
 // Serve static files (CSS, Images, JS) from the public directory
